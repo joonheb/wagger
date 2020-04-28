@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/startLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/starter_background"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+
+        <LinearLayout
+            android:id="@+id/settingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baemin"
+                    android:gravity="left"
+                    android:text="내기 인원 :"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF" />
+
+                <ImageButton
+                    android:id="@+id/button1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/starter_button_minus_selector" />
+
+                <TextView
+                    android:id="@+id/personCount"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baemin"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="3"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="34sp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baemin"
+                    android:text="명"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF" />
+
+                <ImageButton
+                    android:id="@+id/button2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/starter_button_plus_selector" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="25dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baemin"
+                    android:gravity="left"
+                    android:text="내기 개수 :"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF" />
+
+                <ImageButton
+                    android:id="@+id/button3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/starter_button_minus_selector" />
+
+                <TextView
+                    android:id="@+id/bombCount"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baemin"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="1"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="34sp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baemin"
+                    android:text="명"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF" />
+
+                <ImageButton
+                    android:id="@+id/button4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/starter_button_plus_selector" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baemin"
+            android:gravity="center"
+            android:text="내기 정하기"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFFFF" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarFadeDuration="0"
+            android:scrollbarSize="6dp"
+            android:scrollbarThumbHorizontal="@android:color/background_light"
+            android:scrollbarThumbVertical="@android:color/background_light">
+
+            <LinearLayout
+                android:id="@+id/scrollLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" />
+        </ScrollView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tipText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E0003300"
+        android:fontFamily="@font/baemin"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="내기를 모두 입력해주세요"
+        android:textColor="#F8F5F5"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E0003300"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/backText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/baemin"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="20dp"
+            android:text="메인화면"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/blank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/resetText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baemin"
+            android:gravity="center|right"
+            android:paddingTop="15dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="20dp"
+            android:text="시작"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+</LinearLayout>

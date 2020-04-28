@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StartActivity">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/background"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/bombImage"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="200dp"
+                    android:maxHeight="200dp"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/card3" />
+
+                <TextView
+                    android:id="@+id/tipText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baemin"
+                    android:gravity="center"
+                    android:paddingTop="70dp"
+                    android:text="제한시간동안 폭탄을 돌려주세요"
+                    android:textColor="#F8F5F5"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E0003300"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/backText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/baemin"
+                android:gravity="center|left"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="20dp"
+                android:text="메인화면"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/blank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/resetText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baemin"
+                android:gravity="center|right"
+                android:paddingTop="15dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="20dp"
+                android:text="다시하기"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.afinal">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".kakao.GlobalApplication"
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/appicon"
+        android:label="모두의내기"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/appicon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MyAdActivity"></activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".gameZip.Game6_PigCatch" />
+        <activity android:name=".gameZip.Game3_Roulette" />
+        <activity android:name=".gameZip.Game9_LadderGame" />
+        <activity android:name=".gameZip.Game7_WhoseKing" />
+        <activity android:name=".gameZip.Game4_DrawingLots" />
+        <activity android:name=".gameZip.Game8_PushButton" />
+        <activity android:name=".gameZip.Game2_FlowerBomb" />
+        <activity android:name=".MenuActivity" />
+        <activity
+            android:name=".gameZip.Game1_Count10"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="API 키"/>
+    </application>
+
+</manifest>

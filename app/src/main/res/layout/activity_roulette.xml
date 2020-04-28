@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/sharp_label_black_18dp2" />
+
+        <RelativeLayout
+            android:id="@+id/layoutRoulette"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center"
+            android:background="@drawable/background_roulette"
+            android:orientation="vertical">
+
+            <!--        <Button-->
+            <!--            android:id="@+id/btn_rotate"-->
+            <!--            android:layout_width="65dp"-->
+            <!--            android:layout_height="65dp"-->
+            <!--            android:text="돌리기"-->
+            <!--            android:layout_centerInParent="true"-->
+            <!--            android:background="@drawable/button_selector"/>-->
+
+            <Button
+                android:id="@+id/btnRotate"
+                android:layout_width="wrap_content"
+                android:layout_height="87dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="100dp"
+                android:background="@drawable/ring_start_button"
+                android:fontFamily="@font/baemin"
+                android:text="시작"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00444444"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/backText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/baemin"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="20dp"
+            android:text="메인화면"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/blank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/resetText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baemin"
+            android:gravity="center|right"
+            android:paddingTop="15dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/naver"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/border_bottom_line"
+        android:fontFamily="@font/baemin"
+        android:gravity="center"
+        android:text="naver.com"
+        android:textColor="#030303"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/daum"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/border_bottom_line"
+        android:fontFamily="@font/baemin"
+        android:gravity="center"
+        android:text="daum.net"
+        android:textColor="#030303"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/gmail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/border_bottom_line"
+        android:fontFamily="@font/baemin"
+        android:gravity="center"
+        android:text="gmail.com"
+        android:textColor="#030303"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/nate"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/border_bottom_line"
+        android:fontFamily="@font/baemin"
+        android:gravity="center"
+        android:text="nate.com"
+        android:textColor="#030303"
+        android:textSize="30dp" />
+
+</LinearLayout>

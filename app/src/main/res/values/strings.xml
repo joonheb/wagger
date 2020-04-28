@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">모두의 내기</string>
+    <string name="custom_dialog_msg">결과 확인</string>
+    <string name="ok">확인</string>
+
+    <!-- 카카오 앱키 -->
+    <string name="kakao_app_key">e4be0fcaa80fd414730b588d5091324d</string>
+</resources>
+

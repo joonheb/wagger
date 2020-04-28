@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/loginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baemin"
+                android:paddingBottom="30dp"
+                android:text="모두의 내기"
+                android:textColor="#0A0A0A"
+                android:textSize="46dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/user_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/background_layout2"
+                        android:ems="5"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:hint="아이디"
+                        android:inputType="textPersonName"
+                        android:maxLength="10"
+                        android:textColor="#000000"
+                        android:textColorHighlight="#000000"
+                        android:textColorLink="#00160303"
+                        android:textSize="20dp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="18dp" />
+
+                    <EditText
+                        android:id="@+id/user_pw"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/background_layout2"
+                        android:ems="5"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:hint="패스워드"
+                        android:inputType="textPassword"
+                        android:maxLength="12"
+                        android:textColor="#000000"
+                        android:textColorHighlight="#000000"
+                        android:textColorLink="#00160303"
+                        android:textSize="20dp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="18dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#202020"
+                        android:fontFamily="@font/baemin"
+                        android:text="로그인"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="50dp"
+                android:paddingTop="5dp"
+                android:paddingRight="50dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="?android:attr/colorBackground"
+                    android:focusable="false"
+                    android:fontFamily="@font/baemin"
+                    android:gravity="center"
+                    android:text="회원가입"
+                    android:textSize="15dp"
+                    tools:layout_editor_absoluteX="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baemin"
+                    android:text=" | " />
+
+                <TextView
+                    android:id="@+id/searchID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#00ff0000"
+                    android:focusable="false"
+                    android:fontFamily="@font/baemin"
+                    android:gravity="center"
+                    android:text="아이디찾기"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baemin"
+                    android:text=" | " />
+
+                <TextView
+                    android:id="@+id/searchPW"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#00ff0000"
+                    android:focusable="false"
+                    android:fontFamily="@font/baemin"
+                    android:gravity="center"
+                    android:text="비밀번호찾기"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="50dp"
+                android:paddingTop="30dp"
+                android:paddingRight="50dp">
+
+                <com.kakao.usermgmt.LoginButton
+                    android:id="@+id/kakao"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/kakao_login_btn_medium_wide" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="50dp"
+                android:paddingTop="5dp"
+                android:paddingRight="50dp">
+
+                <Button
+                    android:id="@+id/naver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/naver_green"
+                    tools:layout_editor_absoluteX="15dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="술 게임" />
+    <item android:title="후식 내기" />
+    <item android:title="식사 내기" />
+    <item android:title="벌칙 내기" />
+</menu>
